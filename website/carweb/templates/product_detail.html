@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" /> 
+	<title>标题</title>
+	<link href="/static/css/main.css" rel="stylesheet" type="text/css" />
+	<link href="/static/carousel/owl.carousel.css" rel="stylesheet">
+	<link href="/static/carousel/owl.theme.css" rel="stylesheet">
+	<script src="/static/js/jquery.min.js"></script>
+	<script src="/static/js/main.js"></script>
+	<script src="/static/js/daiyanbao.js"></script>
+	<script src="/static/carousel/owl.carousel.js"></script>
+	<script>
+		$(function(){
+			$('.owl-carousel').owlCarousel({
+				items: 1,
+				autoPlay: true
+			});
+		});
+	</script>
+</head>
+<body>
+<div id="container">
+	<div class="header_top">
+		<div class="header_contact">
+			<strong class="header_contact_down">15871722717</strong>
+		</div>
+	</div>
+	<div id="header">
+		<ul id="menu">
+			<li><a href="/main">首页</a></li>
+			<li><a href="/about">关于程力</a></li>
+			<li><a href="/product/ALL">产品中心</a></li>
+			<li><a href="/news">网站首页</a></li>
+			<li><a href="/contact">联系我们</a></li>
+		</ul>
+	</div>
+	<div class="products_main">
+		<div class="products_main_top">
+			<div class="pro_m_t_l">
+				<div id="owl-demo" class="owl-carousel">
+					<div>
+						<img src="/static/{{cars.img1}}">
+					</div>
+					<div>
+						<img src="/static/{{cars.img1}}">
+					</div>
+					<div>
+						<img src="/static/{{cars.img1}}">
+					</div>
+					<div>
+						<img src="/static/{{cars.img1}}">
+					</div>
+					<div>
+						<img src="/static/{{cars.img1}}">
+					</div>
+				</div>
+			</div>
+			<div class="pro_m_t_r">
+				<h3>{{cars.name}}</h3>
+				<hr>
+				<p>{{cars.introductiondetail}}</p>
+				<ul>
+					<li>外形尺寸：{{cars.b3}}mm</li>
+					<li>总质量：{{cars.b8}}kg</li>
+					<li>型号：{{cars.cartype}}</li>
+				</ul>
+				<hr>
+				<span>价格：{{cars.price}}</span>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="products_main_img">
+			<h3>{{cars.name}}-详情介绍</h3>
+			<hr>
+			<p>{{cars.b19}}</p>
+			<p>{{cars.b20}}</p>
+			<ul>
+				<li><img src="/static/{{cars.img1}}"></li>
+				<li><img src="/static/{{cars.img2}}"></li>
+				<li><img src="/static/{{cars.img3}}"></li>
+				<li><img src="/static/{{cars.img4}}"></li>
+				<li><img src="/static/{{cars.img5}}"></li>
+			</ul>
+			<h3>{{cars.name}}配置参数</h3>
+			<hr>
+			<table class="table">
+				<tbody>
+					<th colspan="4">底盘参数</th>
+					<tr><td>车辆形式</td><td>{{cars.b1}}</td><td>轴距（mm）</td><td>{{cars.b2}}</td></tr>
+					<tr><td>外型尺寸（mm）</td><td>{{cars.b3}}</td><td>轮距（前/后）（mm）</td><td>{{cars.b4}}</td></tr>
+					<tr><td>底盘型号</td><td>{{cars.b5}}</td><td>轮胎规格</td><td>{{cars.b6}}</td></tr>
+					<tr><td>燃料种类</td><td>{{cars.b7}}</td><td>最大总质量（kg）</td><td>{{cars.b8}}</td></tr>
+					<tr><td>驱动形式</td><td>{{cars.b9}}</td><td>额定载客人数</td><td>{{cars.b10}}</td></tr>
+					<tr><td>换档形式</td><td>{{cars.b11}}</td><td>百公里油耗（L）（80km/h)</td><td>{{cars.b12}}</td></tr>
+					<tr><td>轮胎数</td><td>{{cars.b13}}</td><td>最高车速（km/h）</td><td>{{cars.b14}}</td></tr>
+					<tr><td>驾照类型</td><td>{{cars.b15}}</td><td>发动机马力</td><td>{{cars.b16}}</td></tr>
+					<tr><td>额定功率（ps/rpm)</td><td>{{cars.b17}}</td><td>最大扭矩/转速（Nm/rpm）</td><td>{{cars.b18}}</td></tr>
+				</tbody>
+			</table>
+			<p style="text-align:right;">●：标配  ○：选配   -：无</p>
+			<table class="table">
+			<thead><tr><th colspan="5" style="text-align:center">大通V80长轴高顶房车配置明细表</th></tr></thead>
+			<tbody>
+				<tr><td>项目内容</td><td>简配型</td><td>标配型</td><td>高配型</td></tr>
+				<tr><td>{{cars.d11}}</td><td>{{cars.d21}}</td><td>{{cars.d31}}</td><td>{{cars.d41}}</td></tr>
+			</tbody>
+			</table>
+		</div>
+		<div style="margin-bottom: 50px;"></div>
+	</div>
+	<div id="footer">
+		<div class="footer01">
+			<div id="header">
+				<ul id="menu">
+					<li><a href="/main">首页</a></li>
+					<li><a href="/about">关于程力</a></li>
+					<li><a href="/product/ALL">产品中心</a></li>
+					<li><a href="/news">待定</a></li>
+					<li><a href="/contact">联系我们</a></li>
+				</ul>
+			</div>
+			<div class="copyright">
+				销售热线：15871722717&nbsp;&nbsp;&nbsp;&nbsp;联 系 人：<b class="red">刘某某</b>（先生）<br/>
+			     版权所有 &copy;2019 程力专用汽车股份有限公司&nbsp;&nbsp;&nbsp;&nbsp;公司地址：湖北省随州市南郊程力汽车工业园<br />
+			      公司网址：<a href="http://www.fangche1314.com/" target="_blank">http://www.fangche1314.com/</a>&nbsp;&nbsp;&nbsp;&nbsp;手机号码：17786713456 <a href="http://www.fangche1314.com" target="_blank">&nbsp;&nbsp;网站首页</a>&nbsp;&nbsp;
+		        <div>
+		        	<img src="/static/img/batb.png"><p>鄂公网安备42130202004423号</p>
+		        </div>
+			</div>			
+		</div>
+		<div class="footer02">
+			<div class="footer02_main">
+				<table>
+					<tbody>
+						<tr>
+							<td></td>
+							<td><a href="tencent://message/?uin=281892714&Site=客服&Menu=yes" target="_blank"><img src="/static/img/footer01.gif"></a></td>
+							<td><img src="/static/img/footer02.gif"></td>
+							<td><a href="#top"><img src="/static/img/footer03.gif"></a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="ad">
+	<div id="zxd_x">
+		<div class="ad01">
+			<div class="ad011">
+				<p>本月促销：依维柯、上汽大通等房车，欢迎咨询选购，厂家销售热线：158-7172-2717</p>
+			</div>
+			<div class="ad012">
+				<button class="button">稍后再说</button>
+				<button><a href="tencent://message/?uin=281892714&Site=客服&Menu=yes">现在咨询</a></button>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="daiyanbao_com_content" style="position:fixed;bottom: 30px;right: 10px;">
+</div>
+</body>
+</html>

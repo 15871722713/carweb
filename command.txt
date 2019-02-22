@@ -1,0 +1,13 @@
+apt-get install python
+apt-get install python-pip
+
+pip install Django==1.11.20
+pip install Pillow==4.3.0
+
+
+
+LANG="zh_CN.UTF-8"
+LANGUAGE="zh_CN:zh"
+
+
+
